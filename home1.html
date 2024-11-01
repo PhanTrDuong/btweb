@@ -1,0 +1,427 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<style >
+body{
+background-color:#f1f1f1y;
+}
+		nav {
+			display: flex;
+			justify-content: space-between;
+			background-color:white;
+			color: black;
+			padding: 20px;
+			text-align: center;
+			align-items:center;
+		}
+				.menu p,button,div{
+			
+			font-family:Georgia,serif;
+			display:inline-table;
+			margin-left:2%;
+			margin-right:2%;
+			font-size: 1vw;			/*font-size: 1vw=1% viewport (vd width trình duyệt 1000px, 1vw=10px) */ 
+			background-color:"#cccccc"
+			
+		}
+		#start{
+			padding:10px;
+			margin-top:30px;
+			background-color:red;
+			color:white;
+		}
+        .ltw_01{
+            text-decoration:underline;
+        }
+		article {
+			background-color: #f1f1f1;
+
+			padding: 10px;
+
+		}
+	footer {
+
+		background-color: blue;
+
+		padding: 40px;
+
+		text-align: left;
+		
+		color: white;
+		width:100%;
+    }
+	div.main1 {
+
+			background-color: #f1f1f1;
+			color: black;
+			padding: 100px;
+
+		}	
+	div.main2 {
+			width:75%;
+			justify-content: space-between;
+			background-color:white;
+			color: black;
+			padding: 200px;
+			text-align: center;
+			align-items:center;
+			
+		}
+		div.main3 {
+			width:75%;
+			justify-content: space-between;
+			background-color:white;
+			color: black;
+			padding: 200px;
+			text-align: center;
+			align-items:center;
+			
+		}
+		.center-parent {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+		}		
+		.grid-item {
+			background-color: #f4f4f4;
+			padding: 20px;
+			text-align: center;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			width:20%;
+			height:100px;
+			display:inline-table;	
+			margin: 25px;
+		}
+		.center-parent2 {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+		}		
+
+		#startlearning{
+			padding:8px;
+			margin-top:50px;
+			background-color:green;
+			color:white;
+			border-radius: 10px;
+			border: 1px solid #ccc;
+		}
+		#moreinfo{
+			padding:8px;
+			border: 1px solid #ccc;
+			background-color:white;
+			color:black;
+			border-radius: 10px;
+			margin-top:70px;
+		}
+		#startlearning2{
+			padding:8px;
+			margin-top:50px;
+			background-color:green;
+			color:white;
+			border-radius: 10px;
+			border: 1px solid #ccc;
+		}
+		#moreinfo2{
+			padding:8px;
+			border: 1px solid #ccc;
+			background-color:white;
+			color:black;
+			border-radius: 10px;
+			margin-top:50px;
+		}
+		#startlearning3{
+			padding:8px;
+			margin-top:40px;
+			background-color:green;
+			color:white;
+			border-radius: 10px;
+			border: 1px solid #ccc;
+		}
+		#moreinfo3{
+			padding:8px;
+			border: 1px solid #ccc;
+			background-color:white;
+			color:black;
+			border-radius: 10px;
+			margin-top:40px;
+		}
+		#startlearning4{
+			padding:8px;
+			margin-top:55px;
+			background-color:green;
+			color:white;
+			border-radius: 10px;
+			border: 1px solid #ccc;
+		}
+		#moreinfo4{
+			padding:8px;
+			border: 1px solid #ccc;
+			background-color:white;
+			color:black;
+			border-radius: 10px;
+			margin-top:55px;
+		}
+		.icon-bar {
+			width: 100%;
+			overflow: auto;
+		}
+		.icon-bar a {
+			float: left;
+			width: 15%;
+			text-align: center;
+			padding: 12px 0;
+			transition: all 0.3s ease;
+			color: black;
+			font-size: 36px;
+		}
+
+		.nav2 {
+			display: flex;
+			justify-content: space-between;
+			padding: 20px;
+			text-align: center;
+			align-items:center;
+		}
+		
+		.nav3 {
+			display: flex;
+			justify-content:flex-end;
+			padding: 10px;
+		}
+		
+		#flexend {
+			width:450px;
+			height: 100px;
+			display: flex;
+			justify-content: flex-end;
+			margin-top:35px;
+		}
+
+		#flexend div {
+			width: 70px;
+			height: 70px;
+			}
+		div.polaroid {
+			width: 350px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			margin-bottom: 25px;
+			text-align: center;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			background-color: #f4f4f4;
+		}
+		.container {
+			text-align: center;
+			padding: 10px 20px;
+		}
+		.faq{
+				display: flex;
+			justify-content: space-between;
+		}
+</style >
+<body >
+<header class="header" >
+		<nav class="menu">
+		<p> &#9776 </p>
+			<p class="ltw_01" id="home">HOME</p>
+			<p >FEATURES</P>
+			<p>PAGES</P>
+			<p style="font-size:50px;">AUTEUR</p>
+			<p>SHOP</P>
+			<p>NEWS</P>
+			<p>ENVENT</P>
+			<p>BLOG</P>
+			<div class="nav2">
+				<a class="active" href="#"><i class="fa fa-home"></i></a> 
+				<a href="#"><i class="fa fa-search"></i></a> 
+				<a href="#"><i class="fa fa-envelope"></i></a> 
+				<a href="#"><i class="fa fa-globe"></i></a>
+			</div>
+		</nav>
+</header>
+<section>
+
+<article >
+<div class="main1">
+
+<p>FOR AUTHOR & WRITE</p>
+<p style="font-size:80px;"><b>Meet your next online course</b></p>
+<img src="anh/logowin.png" style="width:200px;height:160px;">
+<img src="anh/logowin.png" style="width:200px;height:160px;">
+<img src="anh/logowin.png" style="width:200px;height:160px;"><p>
+<button id="start">PURCHASE</button>
+</div>
+<div class="main2">
+	<img src="anh/chuA.png" style="width:450px;height:350px;">
+	<p style="font-size:80px;">Welcome to Auteur</p>
+<table bgcolor='#33CC66'height='400' width='100%'>
+<tr class="center-parent"> 
+			<td class="grid-item">
+			<a ><i class="fa fa-car"></i></a>
+			<p>IT</p>
+			<p>1,160 Courses &rarr;</p>
+			</td>
+            <td class="grid-item">
+			<a ><i class="fa fa-car"></i></a>
+			<p>Health</p>
+			<p>935 Courses &rarr;</p>
+			</td>
+            <td class="grid-item">
+			<a ><i class="fa fa-car"></i></a>
+			<p>Language</p>
+			<p>310 Courses &rarr;</p>
+			</td>
+            <td class="grid-item">
+			<a ><i class="fa fa-car"></i></a>
+			<p>Business</p>
+			<p>1,604 Courses &rarr;</p>
+			</td>
+			<td class="grid-item">
+			<a ><i class="fa fa-car"></i></a>
+			<p>Management</p>
+			<p>956 Courses &rarr;</p>
+			</td>
+</tr>
+<tr class="center-parent"> 
+			<td class="grid-item">
+			<a ><i class="fa fa-truck"></i></a>
+			<p>English</p>
+			<p>55 Courses &rarr;</p>
+			</td>
+			<td class="grid-item">
+			<a ><i class="fa fa-truck"></i></a>
+			<p>Personal Development</p>
+			<p>1,241 Courses &rarr; </p>
+			</td>
+			<td class="grid-item">
+			<a ><i class="fa fa-truck"></i></a>
+			<p>Sales & Maeketing</p>
+			<p>956 Courses &rarr;</p>
+			</td>
+			<td class="grid-item">
+			<a ><i class="fa fa-truck"></i></a>
+			<p>Engineering & Construction</p>
+			<p>780 Courses &rarr;</p>
+			</td>
+			<td class="grid-item">
+			<a ><i class="fa fa-truck"></i></a>
+			<p>Teaching & Academics</p>
+			<p>1,504 Courses &rarr;</p>
+			</td>
+</tr>
+</table>
+
+</div>
+<div class="main3">
+	<div class="center-parent2">
+		<div class="polaroid">
+			<img  src="anh/OIP.jpg" style="width:100%">
+			<div class="container">
+			<p style="font-size:12px;"align="left">Health</p>
+			<p style="font-size:14px;" align="left"><b>Caregiving Skills - Dementia Care</b></p>
+			</div>
+			<button id="moreinfo">More Info</button>
+			<button id="startlearning">Strart Learning</button>
+		</div>
+        <div class="polaroid">
+			<img src="anh/OIP.jpg" style="width:100%">
+			<div class="container">
+			<p style="font-size:12px;"align="left">Business</p>
+			<p style="font-size:15px;" align="left"><b>Fundamentals of HIPAA Law and Its Privacy Rules</b></p>
+			</div>
+			<button id="moreinfo2">More Info</button>
+			<button id="startlearning2">Strart Learning</button>
+		</div>
+        <div class="polaroid">
+			<img src="anh/OIP.jpg" style="width:100%">
+			<div class="container">
+			<p style="font-size:12px;"align="left">Business</p>
+			<p style="font-size:14px;" align="left"><b>HACCP Food Safety System for Restaurant and Other Catering Services</b></p>
+			</div>
+			<button id="moreinfo3">More Info</button>
+			<button id="startlearning3">Strart Learning</button>
+		</div>
+        <div class="polaroid">
+			<img src="anh/OIP.jpg" style="width:100%">
+			<div class="container">
+			<p style="font-size:12px;"align="left">Education</p>
+			<p style="font-size:14px;" align="left"><b>Safeguarding Children and Vulnerable Adults</b></p>
+			</div>
+			<button id="moreinfo4">More Info</button>
+			<button id="startlearning4">Strart Learning</button>
+		</div>
+	</div>
+		
+</div>
+</article>
+</section>
+
+<footer>
+	<table cellspacing="0">
+	
+	<tr>
+        
+		<td align="left" width="25%">
+            <b><h3 id="sach1"><p style="font-size:30px;"><img src="anh/alison.png" style="width:40px;height:40px;">Alison</h3>
+			EMPOWER YOURSELF<p>
+		
+<div class="nav2">
+	<img src="anh/social.png" style="width:40px;height:40px;">
+	<img src="anh/social.png" style="width:40px;height:40px;">
+	<img src="anh/weather.png" style="width:40px;height:40px;">
+	<img src="anh/weather.png" style="width:40px;height:40px;">
+	<img src="anh/ytb.png" style="width:40px;height:40px;">
+	<img src="anh/line.png" style="width:40px;height:40px;">
+	</div>
+	</p></b>
+        </td>
+			
+            <td align="right" width="1300"  height="60" >
+                <font color="white">
+				
+                <p style="font-size:40px;">Rated Excellent
+				<img src="anh/iconstar.png" style="width:40px;height:40px;">
+				<img src="anh/iconstar.png" style="width:40px;height:40px;">
+				<img src="anh/iconstar.png" style="width:40px;height:40px;">
+				<img src="anh/iconstar.png" style="width:40px;height:40px;">
+				<img src="anh/line.png" style="width:40px;height:40px;">Trustpilot
+				</p>
+				
+				<img src="anh/appstore.png">
+				<img src="anh/googleplay-removebg-preview.png">
+			<div id="flexend">
+				<div>
+				<p style="font-size:10px;">&#169; Alison 2024</p>
+				</div>
+				<div >
+				<p style="font-size:10px;">Privacy</p>
+				</div>
+				<div>
+				<p style="font-size:10px;">Terms</p>
+				</div>
+				<div>
+				<p style="font-size:10px;">Cookie Policy</p>
+				</div>
+				<div >
+				<p style="font-size:10px;">Sitemap</p>
+				</div>
+			</div>
+                </font>
+            </td>
+			
+        </tr> 
+	</table>	
+</footer>
+
+
+</body>
+</head>
+</html>
